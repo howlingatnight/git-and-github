@@ -1,4 +1,4 @@
-# sets the url to push to on github
+# change the push url of a cloned repo
 git remote set-url origin https://www.github.com/user/repo-name
 
 # start tracking changes with git
@@ -15,3 +15,18 @@ git status
 
 # commit change and include message
 git commit -m "message for commit"
+
+
+# push existing repo to github
+git remote add origin https://github.com/howlingatnight/git-and-github.git
+git branch -M main
+git push -u origin main
+
+# create repo then push to github
+echo "# git-and-github" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/howlingatnight/git-and-github.git
+git push -u origin main
