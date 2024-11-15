@@ -1,0 +1,17 @@
+# sets the url to push to on github
+git remote set-url origin https://www.github.com/user/repo-name
+
+# start tracking changes with git
+// git init
+
+# add changes to staging area
+git add
+
+# add all changes to staging area with -a flag
+git add -A
+
+# See all changes and files added to staging area
+git status
+
+# commit change and include message
+git commit -m "message for commit"
